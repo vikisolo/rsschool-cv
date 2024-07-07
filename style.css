@@ -1,0 +1,20 @@
+
+html{
+        font-family: 'Roboto Regular';
+        color: rgb(49,196,160);
+}
+body{
+    background-color: rgba(25, 20, 17, 1);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+footer {
+    padding: 20px;
+    background: rgb(49,196,160);
+    background: linear-gradient(0deg, rgba(49,196,160,1) 41%, rgba(180,111,199,1) 92%); 
+    color: aliceblue;
+    text-align: right;
+    font-size: 28px;
+}

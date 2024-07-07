@@ -1,3 +1,6 @@
 Viktoria Solomyannaya
 viki1983s2@gmail.com
-TEST
+function multiply(a, b){
+  a * b
+}
+

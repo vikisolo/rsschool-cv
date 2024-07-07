@@ -10,7 +10,7 @@ body{
     max-width: 1200px;
     margin: 0 auto;
 }
-.footer {
+footer {
     padding: 20px;
     background: rgb(49,196,160);
     background: linear-gradient(0deg, rgba(49,196,160,1) 41%, rgba(180,111,199,1) 92%); 

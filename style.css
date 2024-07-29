@@ -1,0 +1,166 @@
+
+body {
+    margin: 0;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, .5);
+
+    background-color: rgb(218, 236, 230);
+}
+html {
+    font-size: 15px;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.page {
+    width: 1000px;
+    margin: 20px auto;
+
+    position: relative;/*позиция к*/
+
+    background-color: rgb(245, 240, 233);
+}
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+}
+.header {
+    padding: 20px;
+
+    background: rgb(49,196,160);
+    background: linear-gradient(0deg, rgba(49,196,160,1) 41%, rgba(180,111,199,1) 92%); 
+}
+.header-title {
+    margin: 0;
+
+    font-size: 24px;
+    color: rgb(75, 42, 165);
+    text-align: center;
+}
+.header-subtitle {
+    margin: 0;
+    font-weight: 400;
+
+    font-size: 16px;
+    color: rgb(45, 27, 97);
+    text-align: center;
+ 
+}
+.nav {
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.nav-link {
+    padding: 0 15px;
+    text-decoration: none;
+    color: #000;
+    border-left: 1px solid #b02626;
+    
+    transition: background-color 0,2s linear;
+}
+.nav-link:first-child {
+    border-left: none;
+}
+.nav-link:hover {
+    background-color:aqua;
+
+}
+.intro-img {
+    border-radius:15px;
+    box-shadow: 0 0 15px #3c3737;
+    opacity: 0.8;
+
+    transition: opacity 0,2s linear;
+
+}
+.intro-img:hover {
+    opacity: 1;
+}
+.content{
+    width: 100%;
+    max-width: 800px;
+    padding:0 20px;
+}
+.content-text{
+    margin-bottom: 20px;
+}
+.content-title {
+    margin:  0 0 15px;
+
+    font-size: 24px;
+    text-shadow: 1px 1px 2px red ;
+}
+.read-more{
+    color: #094eb6;
+    text-decoration: none;
+}
+.read-more:hover {
+    text-decoration:underline;
+}
+.sidebar {
+    padding: 1rem;
+    width: 200px;
+
+    background-color:#2cc0af9d;
+}
+.sidebar-title {
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    color: #c27e10;
+}
+.sidebar-text {
+    font-size: 12px;
+}
+.article {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid red;
+}
+.article-title{
+    margin: 0 0 5px;
+
+    font-size: 18px;
+    color: blue;
+}
+.article-date {
+    display: block;
+
+    font-size: 1rem;
+    color: rgb(90, 29, 29);
+}
+.footer {
+    padding: 20px;
+
+    background: rgb(49,196,160);
+    background: linear-gradient(0deg, rgba(49,196,160,1) 41%, rgba(180,111,199,1) 92%); 
+    color: aliceblue;
+    text-align: right;
+}
+.auth {
+    width: 500px;
+    padding: 20px;
+    margin: 20px auto;
+
+    background-color:#69bfa9;
+}

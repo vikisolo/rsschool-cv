@@ -246,6 +246,8 @@ a:hover::before {
 .friendst{
   height: 877px;
   top: 1496px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 40px;
   background-color: #F6F6F6;
@@ -258,7 +260,9 @@ a:hover::before {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width:1200px;
 
+  position:relative;
 }
 
 .friendst-title{
@@ -273,10 +277,15 @@ a:hover::before {
 }
 
 .slider-wrapper {
-  width: 1200px;
+  width: 100%;
   height: 435px;
   margin-top: 70px;
-  
+
+  transform:translateX(-5px);
+
+
+
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -284,40 +293,44 @@ a:hover::before {
 
 .slider-container {
   
-    display: grid;
-    grid-template-columns: repeat(3, 270px);
-    gap: 24px;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 
     
   }
-  .slick-slide {
-    width: 120px;
-}
+
 .slider-cards-wrapper {
   width: 1200px;
- 
+  overflow: hidden;
 
   }
   
   .cards-container {
     display: flex;
-    width: 1200px;
+    width: 300%;
     
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
   }
   
   .card {
-    width: 270px;
-    height: 435px;
+    height: auto;
+    color: #fff;
+    user-select: none;
+    padding: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 9px;
-    border: #ddaaaa 2px solid;
-    background-color: #FFFFFF;
-
+    justify-content: center;
+    border-radius: 10px;
+    
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    gap: 20px;
   }
+
 
 .card-image img {
   width: 270px;
@@ -346,62 +359,45 @@ a:hover::before {
   text-align:center;
 }
 
-  .slider__arrow {
+  .slider-arrow {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
-    width: 60px;
-    height: 60px;
-    border: 1px solid var(--border-dark);
-    border-radius: 50%;
+    padding: 23px, 19px, 23px, 19px;
+mask-repeat:calc(180);
+    width: 52px;
+    height: 52px;
+    border: 2px solid var(--border, #FDDCC4);
+    border-radius: 100px;
     transform: translateY(-35%);
     cursor: pointer;
     transition: 0.3s;
   }
   
-  .slider__arrow_left {
+  .slider-arrow-left {
     margin-left: 4px;
   }
   
-  .slider__arrow_right {
+  .slider-arrow-right {
     margin-right: 4px;
   }
   
-  .slider__dots {
-    display: flex;
-    gap: 12px;
+  @keyframes time-progress-bar {
+    from {
+      translate: -100% 0;
+    }
+    to {
+      translate: 0 0;
+    }
+  }
+  @media (max-width: 768px) {
+    .slider-wrapper {
+      margin: 0 10px 40px;
+      .slider-wrapper {
+        display: none;
+      }  }
   }
   
-  .slider__dot {
-    display: inline-block;
-    position: relative;
-    width: 40px;
-    height: 4px;
-    background-color: var(--border-light);
-    border-radius: 100px;
-    overflow: hidden;
-  }
-  
-  .slider__dot_fill {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    translate: -100% 0;
-    background-color: var(--border-dark);
-    border-radius: inherit;
-  }
-  
-  .slider__dot_active .slider__dot_fill {
-    animation-name: time-progress-bar;
-    animation-duration: 5000ms;
-    animation-fill-mode: forwards;
-    animation-play-state: running;
-  }
-
 
   .button.product-button{
   width: 187px;
@@ -437,48 +433,58 @@ a:hover::before {
 
 /*How*/
 .section-how{
-  height: 588px;
+  height: 611px;
   display: flex;
   text-align: center;
   background:#FFFFFF;
   padding-bottom: 108px;/* низ отступ след блока */
 }
-.how-title-text{
-  width: 400px;
+.how-title{
+  width: 308px;
   height: 90px;
+  margin-left: 30%;
+}
+.how-title-text{
+  height: 90px;
+  font-weight: 400;
   margin-top: 50px;
   text-align: center;
   line-height: 45.5px;
   font-size: 35px;
-
 }
-.item-how{
-  text-align: center;
+.container-how {
+  max-width: 1280px;
+  height: 431px;
+  margin-left: 40px;
+  padding: 10px 150px;/* отступ картинок  с лева и права*/
+}
+.how-item{
+  display: grid;
+  margin-top: 60px;
+  margin-left: 10px;
+    gap: 20px;/* растояние между */
+    grid-template-columns: repeat(5, 210px);
+  
+    justify-content: center;
+}
 
+.item-how{
+  justify-items: center; 
 }
 .how-items-img{
   height: 50px;
   width: 50px;
-
 }
 
 .texst-how{
   font-size: 25px;
   font-family: sans-serif;
   margin-bottom: 25px;
-   padding: 24px 0;/* движ низ */}
+   padding: 24px 0;/* движ низ */
+}
 
-.how-item{
-  display: grid;
-  margin-top: 60px;
-    gap: 20px;/* растояние между */
-    grid-template-columns: repeat(5, 210px);
-    justify-content: center;
-}
-.container-how {
-  max-width: 1280px;
-  padding: 10px 150px;/* отступ картинок  с лева и права*/
-}
+
+
 
 
 
@@ -497,7 +503,6 @@ a:hover::before {
   height: 282px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   margin-left: 680px;
 }
 .you-desc{
@@ -508,8 +513,9 @@ a:hover::before {
   gap: 20px;
 }
 .heading-you-title{
-  width: 300px;
+  width: 270px;
   height: 90px;
+
 }
 .you-title{
   
@@ -559,27 +565,24 @@ gap: 10px;
   width: 319px;
   height: 23px;
 
-  margin-top: 2px ;
-  display: flex;
-
 }
 
 .you-card-text{
   width:349px;
   height:43px;
-    margin-top: 10px ;
-  margin-left: 60px;
+  margin-left: 20px;
   color:#545454;
+  font-weight: 400;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: #545454;
+  line-height: 23px;/*верх отступ*/
+  letter-spacing:6%;
 }
-.you-card-number{
-  margin-top: 10px ;
-  margin-left: 60px;
 
 
-}
 .img-card{
   margin-top: 10px ;
-  margin-left: 15px;
 }
 
 /*Footer*/

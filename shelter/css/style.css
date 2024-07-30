@@ -15,6 +15,7 @@ body {
   height: 3796px;
   background: rgba(133, 179, 220, 0.523);
   background-repeat: no-repeat;
+  overflow-x:hidden;
 }
 html {
   font-size: 15px;

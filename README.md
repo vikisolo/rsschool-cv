@@ -1,2 +1,2 @@
-[https://github.com/vikisolo/rsschool-cv/shelter
-https://vikisolo.github.io/rsschool-cv/shelter-part2
+https://github.com/vikisolo/rsschool-cv/shelter
+

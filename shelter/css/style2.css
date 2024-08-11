@@ -8,7 +8,8 @@
 }
 body {
   font-family: 'Georgia', 'Merriweather', sans-serif;
-  width:100%;
+  min-width: 1280px;
+  width: 100%;
   height:100%;
   color:#fff;
 }
@@ -29,17 +30,20 @@ h3{
   letter-spacing:6%;
   text-align:center;
 }
-a {
-  text-decoration: none;
-  color: #ece4d4;
-  position: relative;
-}
-
 .logo.header-subtitle{
   text-decoration: none;
 }
 .logo:hover {
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.header-item:hover{
+  color:#292929;
+  transition: 0.3s;
+}
+a {
+  text-decoration: none;
+  color: #CDCDCD;
+  position: relative;
 }
 
 /*исправить в скобках*/
@@ -48,18 +52,9 @@ a:not(.not-btn, .you-card-text, .logo)::before {
   position: absolute;
   bottom: -5px;
   left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  border: 2px solid  #f0cc84;
-  color:inherit;
-  transition: text-shadow 0.3s ease-in-out;
-  opacity: 0;
+  color:#FAFAFA;
 }
 
-a:hover::before {
-  width: 100%;
-  opacity: 1;
-}
 .container {
   width:100%;
   margin:0 auto;
@@ -211,7 +206,7 @@ a:hover::before {
   transition: 0.3s;
 }
 .card:hover .button product-button{
-  background-color: #fddcc4;
+  background-color: #c4fdd2;
   cursor:pointer;
 }
 .card-image img {

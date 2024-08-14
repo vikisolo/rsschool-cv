@@ -65,14 +65,14 @@ a:not(.not-btn, .you-card-text, .logo)::before {
   margin:0 auto;
 }
 .page-start{
-  width: 1280px;
+  width: 100%;
   height: 908px;
   padding: 20px 40px 40px 40px;
   margin: 0 auto;
   background: url(../1\ фон.jpg);
 }
 .header {
-  width: 1200px;
+  width: 100%;
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -81,7 +81,7 @@ a:not(.not-btn, .you-card-text, .logo)::before {
   margin-left:40px ;
 }
 .header-container{
-  width: 1280px;
+  width: 100%;
   height: 120px;
   padding: 10px 40px 40px 40px;
   margin: 0 auto;
@@ -583,11 +583,12 @@ a:not(.not-btn, .you-card-text, .logo)::before {
 }
 .img-card{
   margin-top: 10px ;
+  margin-right: 20px;
 }
 
 /*Footer*/
 .footer {
-  width:1280px;
+  width:100%;
   height:350px;
   padding: 120px;
   display: flex;
@@ -664,7 +665,11 @@ font-family:Georgia, 'Times New Roman', Times, serif;
   color:#F1CDB3;
   letter-spacing: 6%;
 }
+
 .img-dog3{
   margin-top: 0px ;
   margin-left: 105px;
+}
+.img-email{
+  margin-right: 20px;
 }

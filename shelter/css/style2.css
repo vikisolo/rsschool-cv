@@ -144,7 +144,7 @@ a:not(.not-btn, .you-card-text, .logo)::before {
 }
 /*Pets*/
 .pets{
-  width: 1280px;
+  width: 100%;
   height: 1342px;
   margin-top: 0px auto;
   background: #F6F6F6;
@@ -204,10 +204,21 @@ a:not(.not-btn, .you-card-text, .logo)::before {
   box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
   cursor:pointer;
   transition: 0.3s;
+  z-index: 10;
 }
-.card:hover .button product-button{
-  background-color: #c4fdd2;
+.card:hover .button.product-button{
+  background-color:#fddcc4;
+  color: #292929;
+  text-decoration: none;
+  transition: 0.3s;
   cursor:pointer;
+}
+.card span{
+  font-family: 'Georgia', 'Merriweather', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  text-align: center
 }
 .card-image img {
   width: 270px;
@@ -250,18 +261,22 @@ a:not(.not-btn, .you-card-text, .logo)::before {
   align-items:center;
   justify-content: center;
   gap: 10px;
+  box-sizing: border-box;
 }
 .button.product-button span:first-child{
   margin-right: 10px;
 }
-.button.product-button:hover{
-  background: #F1CDB3;
-  color: #292929;
-  text-decoration: none;
-}
+
 .friendst-not-btns{
   margin-top: 60px;
 }
+.friendst-not-btn:hover{
+  background: #FDDCC4;
+  color: #292929;
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
 .nav-button-our{
   display:flex;
   flex-direction: row;

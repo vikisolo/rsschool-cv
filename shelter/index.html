@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-
+   <!-- <link rel="stylesheet" href="css/style768.css">-->
     <title> Cozy House1</title>
     <link rel="icon" href="free.ico" type="free-icon">
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
@@ -33,6 +33,32 @@
         
     </header>
 </div>
+            <!--popup 1 -->
+
+            <button class="openDialogBtn button-violet"
+type="button" aria-haspopup="dialog" aria-controls="myDialog"
+          >
+            Открыть попап
+          </button>
+          <dialog class="child" id="myDialog">
+            <div class="dialog__wrapper">
+              <h2>Прошу проверить работу в более поздний срок#128579</h2>
+              <button
+                class="closeDialogBtn button-black"
+                type="button"
+              >
+                Согласен &#128156
+              </button>
+            </div>
+          </dialog>
+  <!--popup 2 -->
+<div class="popup-one">
+<div id="popup">
+<p>Прошу проверить работу в более поздний срок</p>
+<button onclick="hidePopup()">мур</button>
+</div>
+</div>
+
 <section class="section-not" id="not">
     <div class="not-items">
         <div class="not-desc">  
@@ -52,8 +78,13 @@
     </div><!-- not-items -->
 </section><!--not-->
 </div>
+
+
+
+
             <!-- about -->
 <section class="section-about" id="about">
+    <div class="about-content">
     <img class="img-dog1" src="./img/about-pets.png" width="300" height="408" alt="dog">
 
     <div class="about-items">
@@ -71,6 +102,7 @@
                 We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.
             </p>
         </div>
+    </div><!-- about-content -->
         </div><!-- about-desc -->
 </div><!-- about-items -->
 </section>            <!-- about -->
@@ -88,29 +120,54 @@
                     </div>
 
                     <div class="slider-wrapper">
-
+<div class="slider-btn">
                         <div class="slider-arrow slider-arrow-left">
                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M18.5 12H6M6 12L12 6M6 12L12 18" stroke="#545454" stroke-linecap="round" stroke-linejoin="round"></path>
                           </svg>
                         </div>
-                        
+                    </div>
             <div class="slider-container">
                 <div class="slider-cards-wrapper">
                   <div class="cards-container">
-                    <div class="card">
-                      <div class="card-image"><img src="img/friendst1.png" alt="friendst1"></div>
-                      <div class="card-descr">
-                        <h3 class="card-descr-title">
-                            Katrine
-                        </h3>
-
+                  
+                    <div class="card" id="card1" >
+                        <div class="card-image"><img src="img/friendst1.png" alt="friendst1"></div>
+                        <div class="card-descr">
+                          <h3 class="card-descr-title">
+                              Katrine
+                          </h3>
+  
+                        </div>
+                        <button class="button product-button">
+                          <span> Learn more</span>
+                      </button>
                       </div>
-                      <button class="button product-button">
-                        <span> Learn more</span>
-                    </button>
-                    </div>
-                    <div class="card">
+                      <div class="card" id="card2" >
+                        <div class="card-image"><img src="img/friendst1.png" alt="friendst1"></div>
+                        <div class="card-descr">
+                          <h3 class="card-descr-title">
+                              Katrine
+                          </h3>
+  
+                        </div>
+                        <button class="button product-button">
+                          <span> Learn more</span>
+                      </button>
+                      </div>
+                      <div class="card" id="card3" >
+                        <div class="card-image"><img src="img/friendst1.png" alt="friendst1"></div>
+                        <div class="card-descr">
+                          <h3 class="card-descr-title">
+                              Katrine
+                          </h3>
+  
+                        </div>
+                        <button class="button product-button">
+                          <span> Learn more</span>
+                      </button>
+                      </div>
+                      <div class="card" id="card4" >
                       <div class="card-image"><img src="img/friendst2.png" alt="friendst2"></div>
                       <div class="card-descr">
                         <h3 class="card-descr-title">
@@ -121,7 +178,40 @@
                         <span> Learn more</span>
                     </button>   
                     </div>
-                    <div class="card">
+                    <div class="card" id="card5" >
+                        <div class="card-image"><img src="img/friendst2.png" alt="friendst2"></div>
+                        <div class="card-descr">
+                          <h3 class="card-descr-title">
+                              Jennifer
+                          </h3>
+                        </div>
+                        <button class="button product-button">
+                          <span> Learn more</span>
+                      </button>   
+                      </div>
+                      <div class="card" id="card6" >
+                        <div class="card-image"><img src="img/friendst2.png" alt="friendst2"></div>
+                        <div class="card-descr">
+                          <h3 class="card-descr-title">
+                              Jennifer
+                          </h3>
+                        </div>
+                        <button class="button product-button">
+                          <span> Learn more</span>
+                      </button>   
+                      </div>
+                      <div class="card" id="card7" >
+                        <div class="card-image"><img src="img/friendst2.png" alt="friendst2"></div>
+                        <div class="card-descr">
+                          <h3 class="card-descr-title">
+                              Jennifer
+                          </h3>
+                        </div>
+                        <button class="button product-button">
+                          <span> Learn more</span>
+                      </button>   
+                      </div>
+                    <div class="card" id="card8">
                       <div class="card-image"><img src="img/friendst3.png" alt="friendst3"></div>
                       <div class="card-descr">
                         <h3 class="card-descr-title">
@@ -137,21 +227,21 @@
                 </div><!-- slider-cards-wrapper -->
 
               </div><!-- slider-container -->
-
+              <div class="slider-btn">
               <div class="slider-arrow slider-arrow-right">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6 12H18.5M18.5 12L12.5 6M18.5 12L12.5 18" stroke="#292929" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
               </div>
-
+            </div>
             </div><!-- slider-wrapper -->
             <!-- btns -->
             <div class="friendst-not-btns">
-            <div class="not-btns">
-                <a class="not-btn" href="index2.html">
+      
+                <a class="friendst-not-btn" href="index2.html">
                     <span>Get to know the rest</span>
                 </a>
-                </div><!-- btns -->
+              
             </div><!-- friendst-not-btns -->
         </div><!-- friendst-item -->
             </section>            <!-- Friends -->
@@ -168,7 +258,6 @@ our shelter
     <div class="how-item">
 
             <div class="item-how">
-                <i class="fa fa-users" aria-hidden="true"></i>
                 <img src="img/пакет.svg" alt="Pet food" class="how-items-img"> 
 
                <div class="texst-how">Pet food</div>
@@ -223,6 +312,7 @@ our shelter
 
             <!-- You -->
             <section class="section-you" id="you">
+                <div class="you-content">
                 <img class="img-dog2" src="./img/donation-dog.png" width="505" height="261" alt="dog">
             
                 <div class="you-items">
@@ -239,7 +329,7 @@ our shelter
                         <div class="you-card-content">
                       
                         
-<a class="you-card-text" href="numeric:83802880802887917435" target="_blank"> <img class="img-card" src="./img/credit-card.svg" width="30" height="23" alt="dog">83802880802887917435</a>
+<a class="you-card-text" href="numeric:83802880802887917435" target="_blank"> <img class="img-card" src="./img/credit-card.svg" width="30" height="23" alt="dog"><span> 8380 2880 8028 8791 7435</span></a>
 
 </div><!--you-card-conten -->
                     </div><!-- you-card -->
@@ -250,7 +340,7 @@ our shelter
                     </div><!-- you-desc -->
 
             </div><!-- you-items -->
-
+        </div><!-- you-content -->
             </section><!-- You -->
 
 
@@ -270,12 +360,11 @@ our shelter
 
             </div><!-- footer-contacts-mail-->
             <div class="footer-contacts-phone">
-                <a class="footer-contacts-text" href="tel:+136745677554" target="_blank"> <img class="img-email" src="./img/icon-phone.svg" width="40" height="32" alt="phone"> +136745677554</a>
+                <a class="footer-contacts-text" href="tel:+136745677554" target="_blank"> <img class="img-email" src="./img/icon-phone.svg" width="40" height="32" alt="phone"> +13 674 567 75 54</a>
             
             </div><!-- footer-contacts-phone-->
 
             </div><!-- footer-contacts-->
-
 
 
  <div class="footer-contacts2">
@@ -288,14 +377,15 @@ our shelter
                         <a class="footer-contacts-text" href="https://maps.app.goo.gl/tj5ch3qwL3ErZGm28" target="_blank"> <img class="img-email" src="./img/icon-marker.svg" alt="">1 Central Street, Boston (entrance from the store)</a>
                         <a class="footer-contacts-text" href="https://maps.app.goo.gl/HRUMx4gwi4FfsrDB7" target="_blank"> <img class="img-email" src="./img/icon-marker.svg" alt="">18 South Park, London </a>
 
-            </div><!-- footer-contacts2-->
+            </div><!-- footer-contacts-visit-->
 
 
 
             </div><!-- footer-contacts-->
             <div class="footer-contacts2">
-                <img class="img-dog3" src="./img/footer-puppy.png" width="300" height="309" alt="dog">
+                <img class="img-dog3" src="./img/footer-puppy.png" width="300" height="310" alt="dog">
             </div><!-- footer-contacts2-->
+     
         </div><!-- footer-container -->
     </footer>
 </div><!-- container -->

@@ -163,7 +163,7 @@ a:not(.not-btn, .you-card-text, .logo)::before {
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(14, 13, 13, 0.1);
   font-family:Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-size: 35px;
   width: 400;
   color: #000000;
 }
